@@ -1,25 +1,25 @@
 import styled from 'styled-components';
-import { StyleButtonProps } from './Button.types';
+import { ButtonStyleProps } from './Button.types';
 
-export const Button = styled.button<StyleButtonProps>`
+export const Button = styled.button<ButtonStyleProps>`
   padding: 5px 15px;
-  border: 5px solid ${props => props.theme.color[props.color]};
+  border: 1px solid ${props => props.theme.color[props.borderColor]};
   border-radius: 15px;
-  background-color: '#000000';
-  font-size: 20px;
+  background-color: ${props => props.theme.color[props.backgroundColor]};
+  font-size: ${props => props.theme.fontSize[props.fontSize]};
   font-weight: 700;
-  color: ${props => props.theme.color};
-  transition: all 100ms ease-in-out;
+  color: ${props => props.theme.color[props.color]};
+  transition: all 150ms ease-in-out;
 
   &:hover {
-    background-color: ${props => props.theme.color};
+    background-color: #ffffff;
     color: ${props => props.theme.white};
     cursor: pointer;
   }
 
-  &.active {
-    background-color: ${props => props.theme.color};
-    color: ${props => props.theme.white};
+  &:active {
+    background-color: ${props => props.theme.color.yellow};
+    color: ${props => props.theme.color.navy};
   }
 
   /*

@@ -4,14 +4,9 @@ import * as S from './Button.style';
  * Primary UI component for user interaction
  */
 export const Button = ({
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
+  event,
+  color = 'black',
+  btnContent = 'none content',
 }: ButtonProps) => {
-  return (
-    <S.Button background={backgroundColor} {...props}>
-      {label}
-    </S.Button>
-  );
+  return <S.Button color={color}>{btnContent}</S.Button>;
 };

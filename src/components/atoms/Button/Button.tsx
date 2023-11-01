@@ -4,9 +4,20 @@ import * as S from './Button.style';
  * Primary UI component for user interaction
  */
 export const Button = ({
-  event,
+  borderColor = 'black',
+  backgroundColor = 'white',
   color = 'black',
+  fontSize = 'small',
   btnContent = 'none content',
 }: ButtonProps) => {
-  return <S.Button color={color}>{btnContent}</S.Button>;
+  return (
+    <S.Button
+      color={color}
+      fontSize={fontSize}
+      backgroundColor={backgroundColor}
+      borderColor={borderColor}
+    >
+      {btnContent}
+    </S.Button>
+  );
 };

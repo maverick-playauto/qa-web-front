@@ -1,6 +1,11 @@
 export interface ButtonProps {
-  backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
-  label: string;
-  onClick?: () => void;
+  color?: string;
+  fontSize?: string;
+  btnContent?: string;
+  device?: string;
+  event?: () => void;
+}
+
+export interface StyleButtonProps {
+  color: string;
 }

@@ -18,9 +18,12 @@ const color = {
   yellow: '#FFD93D',
   green: '#6BCB77',
   blue: '#4D96FF',
+  skyblue: '#6aafe6',
   navy: '#3C486B',
   purple: '#949CDF',
   beige: '#FFF5E0',
+  gray: '#D8D9DA',
+  lightGray: '#fbfbfb',
 };
 
 const fontSize = {
@@ -32,10 +35,17 @@ const fontSize = {
   xxlarge: '96px',
 };
 
+const borderWidth = {
+  thin: '0.5px',
+  normal: '1px',
+  thick: '2px',
+};
+
 const theme = {
   color,
   fontSize,
   device,
+  borderWidth,
 };
 
 export default theme;

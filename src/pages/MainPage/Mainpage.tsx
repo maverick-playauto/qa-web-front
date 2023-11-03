@@ -1,14 +1,10 @@
-import { Button } from '../../components/atoms/Button/Button';
+import MainPageTemplate from '../../components/Template/MainPageTemplate';
 
 const MainPage = () => {
   return (
-    <div>
-      <Button backgroundColor="red" />
-      <Button backgroundColor="yellow" />
-      <Button backgroundColor="purple" />
-      <Button backgroundColor="navy" />
-      <h1>MainpagP</h1>
-    </div>
+    <main>
+      <MainPageTemplate />
+    </main>
   );
 };
 

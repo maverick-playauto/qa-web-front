@@ -1,18 +1,19 @@
-export interface ButtonBaseProps {
-  borderColor?: string;
-  backgroundColor?: string;
-  color?: string;
-  fontSize?: string;
-}
-export interface ButtonProps extends ButtonBaseProps {
-  btnContent?: string;
-  device?: string;
-  event?: () => void;
+import { HTMLAttributes } from 'react';
+
+export interface AtomicButton extends HTMLAttributes<HTMLButtonElement> {
+  name?: string;
+  type?: 'submit' | 'button' | 'reset';
 }
 
-export interface ButtonStyleProps extends ButtonBaseProps {
-  borderColor: string;
-  backgroundColor: string;
-  color: string;
-  fontSize: string;
+export interface ButtonStyle {
+  bgColor?: string;
+  fontSize?: string;
+  borderColor?: string;
+  color?: string;
+  borderWidth?: string;
+  hoverBgColor?: string;
+  border?: string;
+  hoverColor?: string;
+  activeBgColor?: string;
+  activeColor?: string;
 }

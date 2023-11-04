@@ -29,7 +29,7 @@ const color = {
 const fontSize = {
   xsmall: '8px',
   small: '12px',
-  medium: '16px',
+  normal: '16px',
   large: '24px',
   xlarge: '48px',
   xxlarge: '96px',

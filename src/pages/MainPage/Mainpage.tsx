@@ -1,11 +1,7 @@
-import MainPageTemplate from '../../components/Template/MainPageTemplate';
+import ShopList from '../../components/Template/ShopList';
 
 const MainPage = () => {
-  return (
-    <main>
-      <MainPageTemplate />
-    </main>
-  );
+  return <ShopList />;
 };
 
 export default MainPage;

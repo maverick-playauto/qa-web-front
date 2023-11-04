@@ -1,4 +1,6 @@
 import styled from 'styled-components';
-import { SelectStyle } from './Select.types';
+import { NoamalSelectStyle } from './Select.types';
 
-export const Select = styled.select<SelectStyle>``;
+export const NormalSelect = styled.select<NoamalSelectStyle>`
+  font-size: ${props => props.theme.fontSize[props.fontSize || '16px']};
+`;

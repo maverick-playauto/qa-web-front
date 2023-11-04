@@ -5,7 +5,7 @@ export interface AtomicButton extends HTMLAttributes<HTMLButtonElement> {
   type?: 'submit' | 'button' | 'reset';
 }
 
-export interface ButtonStyle {
+export interface NormalButtonStyle {
   bgColor?: string;
   fontSize?: string;
   borderColor?: string;

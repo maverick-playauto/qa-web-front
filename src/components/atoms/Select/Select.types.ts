@@ -4,4 +4,6 @@ export interface AtomicSelect extends HTMLAttributes<HTMLSelectElement> {
   name?: string;
 }
 
-export interface SelectStyle {}
+export interface NoamalSelectStyle {
+  fontSize?: string;
+}

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import { NormalButton } from './Button';
 import theme from '../../../assets/styles/Theme';
 
 const meta = {
-  title: 'ATOM/Button',
-  component: Button,
+  title: 'NormalButton',
+  component: NormalButton,
   parameters: {
     layout: 'centered',
   },
@@ -12,7 +12,7 @@ const meta = {
   argTypes: {
     color: { control: 'color' },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof NormalButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -1,15 +1,21 @@
+import { NormalButton } from '../atoms/Button/Button.style';
+import { NormalInput } from '../atoms/Input/Input.style';
 import { NormalSelect } from '../atoms/Select/Select.style';
 
 const SearchForm = () => {
   return (
     <div>
-      <NormalSelect fontSize="small">
+      <NormalSelect fontSize="xl">
         {SEARCH_FILTER.map(filterMenu => (
           <option key={filterMenu.value} value={filterMenu.value}>
             {filterMenu.name}
           </option>
         ))}
       </NormalSelect>
+      <NormalInput fontSize="xl" />
+      <NormalButton fontSize="xl" bgColor="skyblue">
+        검색
+      </NormalButton>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import SearchForm from '../molecules/SearchForm';
 const TopBar = () => {
   return (
     <section>
-      <NormalButton fontSize="small" bgColor="skyblue">
+      <NormalButton fontSize="xl" bgColor="skyblue">
         등록
       </NormalButton>
       <SearchForm />

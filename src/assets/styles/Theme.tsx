@@ -27,25 +27,38 @@ const color = {
 };
 
 const fontSize = {
-  xsmall: '8px',
-  small: '12px',
-  normal: '16px',
-  large: '24px',
-  xlarge: '48px',
-  xxlarge: '96px',
+  xs: '8px',
+  s: '12px',
+  base: '16px',
+  lg: '18px',
+  xl: '20px',
+  '2xl': '24px',
+  '3xl': '30px',
+  '4xl': '36px',
+  '5xl': '48px',
+  '6xl': '60px',
+  '7xl': '72px',
+  '8xl': '96px',
+  '9xl': '128px',
 };
 
-const borderWidth = {
-  thin: '0.5px',
-  normal: '1px',
-  thick: '2px',
+const fontWeight = {
+  thin: '100',
+  extraLight: '200',
+  light: '300',
+  normal: '400',
+  medium: '500',
+  semibold: '600',
+  bold: '700',
+  extrabold: '800',
+  black: '900',
 };
 
 const theme = {
   color,
   fontSize,
   device,
-  borderWidth,
+  fontWeight,
 };
 
 export default theme;

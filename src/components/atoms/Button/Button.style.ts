@@ -7,7 +7,7 @@ export const NormalButton = styled.button<NormalButtonStyle>`
   border: none;
   border-radius: 3px;
   color: ${props => props.theme.color[props.color || 'black']};
-  font-size: ${props => props.theme.fontSize[props.fontSize || 'normal']};
+  font-size: ${props => props.theme.fontSize[props.fontSize || 'base']};
   transition: all 50ms ease-in-out;
   box-shadow: 1px 2px 10px 1px #f7efe5;
 

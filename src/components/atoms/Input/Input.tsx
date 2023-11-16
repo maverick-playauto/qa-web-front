@@ -9,13 +9,5 @@ export const NormalInput = ({
   placeholder = '검색어 입력',
   ...props
 }: AtomicInput) => {
-  return (
-    <S.NormalInput
-      name={name}
-      type={type}
-      onChange={onChange}
-      placeholder={placeholder}
-      {...props}
-    />
-  );
+  return null;
 };

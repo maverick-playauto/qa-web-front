@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { NormalButton } from './Button';
-import theme from '../../../assets/styles/Theme';
 
 const meta = {
   title: 'NormalButton',
@@ -10,7 +9,11 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    color: { control: 'color' },
+    buttonType: { control: 'radio' },
+    width: { control: 'text' },
+    margin: { control: 'text' },
+    padding: { control: 'text' },
+    children: { control: 'text' },
   },
 } satisfies Meta<typeof NormalButton>;
 
@@ -19,6 +22,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    color: theme.color.black,
+    buttonType: 'primary',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
   },
 };

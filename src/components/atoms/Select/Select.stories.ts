@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { NormalSelect } from './Select';
-import theme from '../../../assets/styles/Theme';
 
 const meta = {
   title: 'ATOM/Button',
@@ -19,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    color: theme.color.black,
+    color: 'red',
   },
 };

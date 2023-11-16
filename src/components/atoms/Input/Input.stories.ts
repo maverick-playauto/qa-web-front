@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { NormalInput } from './Input';
-import theme from '../../../assets/styles/Theme';
 
 const meta = {
   title: 'NormalInput',
@@ -19,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    color: theme.color.black,
+    color: 'blue',
   },
 };

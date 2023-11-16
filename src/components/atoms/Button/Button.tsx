@@ -1,16 +1,27 @@
-import { AtomicButton } from './Button.types';
+import { IButtonProp } from './Button.interface';
 import * as S from './Button.style';
 
 export const NormalButton = ({
-  name,
-  children = 'empty',
-  type = 'button',
+  buttonType = 'primary',
+  width = 'medium',
+  disabled,
   onClick,
-  ...props
-}: AtomicButton) => {
+  margin,
+  padding,
+  height,
+  children = 'button',
+}: IButtonProp) => {
   return (
-    <S.NormalButton name={name} type={type} onClick={onClick} {...props}>
+    <S.Btn
+      buttonType={buttonType}
+      width={width}
+      disabled={disabled || false}
+      onClick={() => onClick}
+      padding={padding}
+      margin={margin}
+      height={height}
+    >
       {children}
-    </S.NormalButton>
+    </S.Btn>
   );
 };

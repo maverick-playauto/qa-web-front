@@ -11,8 +11,6 @@ const meta = {
   argTypes: {
     buttonType: { control: 'radio' },
     width: { control: 'text' },
-    margin: { control: 'text' },
-    padding: { control: 'text' },
     children: { control: 'text' },
   },
 } satisfies Meta<typeof NormalButton>;
@@ -20,9 +18,27 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Text: Story = {
   args: {
-    buttonType: 'primary',
+    buttonType: 'text',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
+  },
+};
+
+export const Contained: Story = {
+  args: {
+    buttonType: 'contained',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
+  },
+};
+
+export const Outlined: Story = {
+  args: {
+    buttonType: 'outlined',
     width: 'medium',
     margin: 5,
     padding: 3,

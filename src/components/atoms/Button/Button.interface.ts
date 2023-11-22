@@ -6,7 +6,7 @@ export interface IButtonProp
   /**
    * 버튼 종류
    */
-  buttonType: 'primary' | 'dashed' | 'non-outline';
+  buttonType: 'text' | 'contained' | 'outlined';
 
   /**
    * onClick Event

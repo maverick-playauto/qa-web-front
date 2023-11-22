@@ -2,7 +2,7 @@ import { IButtonProp } from './Button.interface';
 import * as S from './Button.style';
 
 export const NormalButton = ({
-  buttonType = 'primary',
+  buttonType = 'contained',
   width = 'medium',
   disabled,
   onClick,

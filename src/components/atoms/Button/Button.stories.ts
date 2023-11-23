@@ -1,25 +1,46 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
-import theme from '../../../assets/styles/Theme';
+import { NormalButton } from './Button';
 
 const meta = {
-  title: 'ATOM/Button',
-  component: Button,
+  title: 'NormalButton',
+  component: NormalButton,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {
-    color: { control: 'color' },
+    buttonType: { control: 'radio' },
+    width: { control: 'text' },
+    children: { control: 'text' },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof NormalButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Text: Story = {
   args: {
-    color: theme.color.black,
-    btnContent: 'Button',
+    buttonType: 'text',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
+  },
+};
+
+export const Contained: Story = {
+  args: {
+    buttonType: 'contained',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
+  },
+};
+
+export const Outlined: Story = {
+  args: {
+    buttonType: 'outlined',
+    width: 'medium',
+    margin: 5,
+    padding: 3,
   },
 };

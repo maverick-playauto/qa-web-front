@@ -1,23 +1,27 @@
-import { ButtonProps } from './Button.types';
+import { IButtonProp } from './Button.interface';
 import * as S from './Button.style';
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  borderColor = 'black',
-  backgroundColor = 'white',
-  color = 'black',
-  fontSize = 'small',
-  btnContent = 'none content',
-}: ButtonProps) => {
+
+export const NormalButton = ({
+  buttonType = 'contained',
+  width = 'medium',
+  disabled,
+  onClick,
+  margin,
+  padding,
+  height,
+  children = 'button',
+}: IButtonProp) => {
   return (
-    <S.Button
-      color={color}
-      fontSize={fontSize}
-      backgroundColor={backgroundColor}
-      borderColor={borderColor}
+    <S.Btn
+      buttonType={buttonType}
+      width={width}
+      disabled={disabled || false}
+      onClick={() => onClick}
+      padding={padding}
+      margin={margin}
+      height={height}
     >
-      {btnContent}
-    </S.Button>
+      {children}
+    </S.Btn>
   );
 };

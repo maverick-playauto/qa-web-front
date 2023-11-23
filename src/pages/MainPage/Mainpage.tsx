@@ -1,15 +1,8 @@
-import { Button } from '../../components/atoms/Button/Button';
+import { NormalButton } from 'components/atoms/Button/Button';
+import ShopList from '../../components/Template/ShopList';
 
 const MainPage = () => {
-  return (
-    <div>
-      <Button backgroundColor="red" />
-      <Button backgroundColor="yellow" />
-      <Button backgroundColor="purple" />
-      <Button backgroundColor="navy" />
-      <h1>MainpagP</h1>
-    </div>
-  );
+  return <NormalButton buttonType="contained" />;
 };
 
 export default MainPage;

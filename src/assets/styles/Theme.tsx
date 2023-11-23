@@ -211,6 +211,27 @@ export const LightTheme: DefaultTheme = {
   defaultHeight: 34,
 
   color: {
+    btn: {
+      text: {
+        background: '#FFFFFF',
+        hoverBackground: colorPalette.blue_50,
+        activeBackground: colorPalette.blue_100,
+        color: colorPalette.blue_700,
+      },
+      contained: {
+        background: colorPalette.blue_200,
+        hoverBackground: colorPalette.blue_300,
+        activeBackground: colorPalette.blue_400,
+        color: colorPalette.grey_900,
+      },
+      outlined: {
+        background: '#FFFFFF',
+        hoverBackground: colorPalette.grey_50,
+        activeBackground: colorPalette.blueGrey_50,
+        color: colorPalette.blue_700,
+        borderColor: colorPalette.blue_700,
+      },
+    },
     background: '#FFFFFF',
     border: '#DEDEDF',
     text: '#333333',

@@ -2,7 +2,7 @@ import styled, { css, DefaultTheme } from 'styled-components';
 import { IButtonTag } from './Button.interface';
 
 export const Btn = styled.button<IButtonTag>`
-  border: none;
+  //props로 받는 항목들은 그대로 사용
   border-radius: 4px;
   font-weight: 600;
   margin: ${({ margin }) => (margin ? `${margin}px ${margin}px` : `$3px 5px`)};

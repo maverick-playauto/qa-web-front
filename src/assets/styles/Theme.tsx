@@ -195,43 +195,7 @@ const colorPalette = {
 };
 
 export const LightTheme: DefaultTheme = {
-  colorPalette: colorPalette,
-
-  defaultWidth: {
-    xxs: 34,
-    xs: 94,
-    small: 106,
-    medium: 148,
-    large: 184,
-    xl: 276,
-    xxl: 432,
-    full: '100%',
-  },
-
-  defaultHeight: 34,
-
   color: {
-    btn: {
-      text: {
-        background: '#FFFFFF',
-        hoverBackground: colorPalette.blue_50,
-        activeBackground: colorPalette.blue_100,
-        color: colorPalette.blue_700,
-      },
-      contained: {
-        background: colorPalette.blue_200,
-        hoverBackground: colorPalette.blue_300,
-        activeBackground: colorPalette.blue_400,
-        color: colorPalette.grey_900,
-      },
-      outlined: {
-        background: '#FFFFFF',
-        hoverBackground: colorPalette.grey_50,
-        activeBackground: colorPalette.blueGrey_50,
-        color: colorPalette.blue_700,
-        borderColor: colorPalette.blue_700,
-      },
-    },
     background: '#FFFFFF',
     border: '#DEDEDF',
     text: '#333333',
@@ -255,38 +219,30 @@ export const LightTheme: DefaultTheme = {
 
     tabBackground: '#e5e5e5',
     tabText: '#5A5A5A',
-
     accordionBackground: '#F4F4F4',
     accordionBackgroundBlue: '#EDF4FA',
     scrollbar: '#DFDFDF',
-
     tableHeaderText: '#788590',
     tableHeaderBackground: '#DDEDFA',
     tableBackground: '#F4FAFF',
     tableHoverBackground: '#DEFCFF',
-
     error: '#D60303',
     warning: '#d7c75d',
     arrow: '#333',
-
     guideBoxText: '#63a2ad',
     guideBoxBackground: '#ecf9fc',
     guideBoxFoldText: '#9BA9AC',
-
     darkmodeHoverButton: '#FFF367',
     darkmodeHoverBackground: '#2C2D32',
-
     // box: '#FFFFFF',
     // boxCategory: '#F5F5F5',
     // tableCategory: '#f2f6fc',
     // select: '#DEFCFF',
     // point: '#0072CE',
     // point2: '#63A2AD',
-
     // mainFont: '#333333',
     // fontDisable: '#65748D',
     // placeholder: '#CCCCCC',
-
     // borderDefault: '#DDDDDD',
     // borderActive: '#333333',
   },

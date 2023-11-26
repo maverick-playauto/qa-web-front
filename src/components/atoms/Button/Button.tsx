@@ -11,12 +11,13 @@ export const NormalButton = ({
   height,
   children = 'button',
 }: IButtonProp) => {
+  console.log(onClick);
   return (
     <S.Btn
       buttonType={buttonType}
       width={width}
       disabled={disabled || false}
-      onClick={() => onClick}
+      onClick={onClick}
       padding={padding}
       margin={margin}
       height={height}

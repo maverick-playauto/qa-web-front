@@ -3,15 +3,12 @@ import { IButtonTag } from './Button.interface';
 
 export const Btn = styled.button<IButtonTag>`
   //props로 받는 항목들은 그대로 사용
+  border: none;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 400;
   margin: ${({ margin }) => (margin ? `${margin}px ${margin}px` : `$3px 5px`)};
   padding: ${({ padding }) =>
     padding ? `${padding}px ${padding}px` : `3px 5px`};
-  ${({ buttonType, theme, disabled }) =>
-    cssOfBtnType(buttonType, theme, disabled)}
-
-  //이외의 스타일은 아래 함수를 통해 정의
   ${({ buttonType, theme, disabled }) =>
     cssOfBtnType(buttonType, theme, disabled)}
 `;

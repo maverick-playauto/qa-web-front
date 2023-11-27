@@ -4,14 +4,13 @@ import * as S from './Button.style';
 export const NormalButton = ({
   buttonType = 'contained',
   width = 'medium',
-  disabled,
+  disabled = false,
   onClick,
   margin,
   padding,
   height,
   children = 'button',
 }: IButtonProp) => {
-  console.log(onClick);
   return (
     <S.Btn
       buttonType={buttonType}

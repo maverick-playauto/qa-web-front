@@ -24,7 +24,7 @@ export interface IButtonProp
   padding?: number;
 
   /**
-   * 버튼 높이. 없으면 기본값 34px
+   * 버튼 높이
    */
   height?: number;
 

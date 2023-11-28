@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 import { IAtoms } from '..';
 
-export interface ISelectProp extends Pick<IAtoms, 'disabled'> {
+export interface ISelectProp extends Pick<IAtoms, 'width' | 'disabled'> {
   /**
    * onChange Event
    */
@@ -21,7 +21,31 @@ export interface ISelectProp extends Pick<IAtoms, 'disabled'> {
    * 로딩 여부
    */
   loading?: boolean;
+
+  /**
+   * 옵션
+   */
+  options?: { name: string; value: number | string }[];
+
+  /**
+   * placeholder
+   */
+  placeholder?: string;
+
+  /**
+   * Select 주제
+   */
+  subject?: string;
+
+  /**
+   * option value 값
+   */
+  value?: string | number | 'default';
 }
 
 // 버튼 css 속성 값
-export interface ISelectTag extends Pick<ISelectProp, 'margin' | 'padding'> {}
+export interface ISelectTag
+  extends Pick<
+    ISelectProp,
+    'value' | 'width' | 'options' | 'margin' | 'padding'
+  > {}

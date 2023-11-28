@@ -195,6 +195,19 @@ const colorPalette = {
 };
 
 export const LightTheme: DefaultTheme = {
+  defaultWidth: {
+    xxs: 34,
+    xs: 94,
+    small: 106,
+    medium: 148,
+    large: 184,
+    xl: 276,
+    xxl: 432,
+    full: '100%',
+  },
+
+  defaultHeight: 34,
+
   color: {
     background: '#FFFFFF',
     border: '#DEDEDF',
@@ -207,6 +220,9 @@ export const LightTheme: DefaultTheme = {
 
     placeholderText: '#CCCCCC',
     checkboxBorder: '#D4D4D4',
+
+    selectBorder: colorPalette.grey500,
+    selectText: colorPalette.grey500,
 
     blueLight: {
       moreLight: colorPalette.blue50,

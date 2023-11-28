@@ -1,24 +1,27 @@
-import styled, { css, DefaultTheme } from 'styled-components';
+import styled from 'styled-components';
+import { StyledOptions } from 'styled-components';
 import { ISelectTag } from './Select.interface';
 
-export const Select = styled.button<ISelectTag>`
-  //props로 받는 항목들은 그대로 사용
-  border: 1px solid black;
-  border-radius: 4px;
+export const Select = styled.select<ISelectTag>`
+  background: ${({ theme }) => theme.color.background};
+  color: ${({ theme, value }) =>
+    `${value === 'default' ? theme.color.selectText : theme.color.text}`};
   font-weight: 400;
+
+  border: 1px solid ${({ theme }) => theme.color.selectBorder};
+  border-radius: 4px;
+
   margin: ${({ margin }) => (margin ? `${margin}px ${margin}px` : `$3px 5px`)};
   padding: ${({ padding }) =>
     padding ? `${padding}px ${padding}px` : `3px 5px`};
-  ${({ theme, disabled }) => cssOfBtnType(theme, disabled)}
+  width: ${({ theme, width }) =>
+    `${width ? theme.defaultWidth[width] : '5'}px`};
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+  }
 `;
-
-const cssOfBtnType = (theme: DefaultTheme, disabled: boolean = false) => {
-  let commonCss = null;
-  let individualCss = null;
-
-  commonCss = css``;
-  return css`
-    ${commonCss}
-    ${individualCss}
-  `;
-};

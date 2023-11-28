@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { NormalButton } from './Button';
 
 const meta = {
-  title: 'NormalButton',
+  title: 'Components/Atom/Button',
   component: NormalButton,
   parameters: {
     layout: 'centered',
@@ -10,7 +10,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     buttonType: { control: 'radio' },
-    width: { control: 'text' },
+    width: { control: 'select' },
     children: { control: 'text' },
   },
 } satisfies Meta<typeof NormalButton>;

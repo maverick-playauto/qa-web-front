@@ -1,37 +1,24 @@
 import React, { useState } from 'react';
 import { ISelectProp } from './Select.interface';
+import { TiArrowUnsorted } from 'react-icons/ti';
 import * as S from './Select.style';
 
 export const NormalSelect = ({
-  width = 'medium',
+  width = 'small',
   disabled = false,
   margin,
   padding,
   options = [{ name: 'sampleOption', value: '' }],
   subject = 'select',
 }: ISelectProp) => {
-  const [selectValue, setSelectValue] = useState('default');
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = e.target.value;
-    setSelectValue(value);
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(prev => !prev);
   };
   return (
-    <S.Select
-      disabled={disabled}
-      margin={margin}
-      padding={padding}
-      width={width}
-      value={selectValue}
-      onChange={handleChange}
-    >
-      <option disabled hidden selected value="default">
-        {subject}
-      </option>
-      {options.map(menu => (
-        <option key={menu.value} value={menu.value}>
-          {menu.name}
-        </option>
-      ))}
+    <S.Select width={width} margin={margin} padding={padding}>
+      <div>{subject}</div>
+      <TiArrowUnsorted />
     </S.Select>
   );
 };

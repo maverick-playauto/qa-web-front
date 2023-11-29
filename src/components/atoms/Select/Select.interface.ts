@@ -1,7 +1,8 @@
 import { MouseEventHandler } from 'react';
 import { IAtoms } from '..';
 
-export interface ISelectProp extends Pick<IAtoms, 'width' | 'disabled'> {
+export interface ISelectProp
+  extends Pick<IAtoms, 'children' | 'width' | 'disabled'> {
   /**
    * onChange Event
    */
@@ -16,11 +17,6 @@ export interface ISelectProp extends Pick<IAtoms, 'width' | 'disabled'> {
    * 패딩 커스텀
    */
   padding?: number;
-
-  /**
-   * 로딩 여부
-   */
-  loading?: boolean;
 
   /**
    * 옵션
@@ -41,11 +37,16 @@ export interface ISelectProp extends Pick<IAtoms, 'width' | 'disabled'> {
    * option value 값
    */
   value?: string | number | 'default';
+
+  isOpen?: boolean;
 }
 
 // 버튼 css 속성 값
 export interface ISelectTag
+  extends Pick<ISelectProp, 'padding' | 'margin' | 'width'> {}
+
+export interface ISelectBoxTag
   extends Pick<
     ISelectProp,
-    'value' | 'width' | 'options' | 'margin' | 'padding'
+    'children' | 'value' | 'width' | 'options' | 'margin' | 'padding'
   > {}

@@ -1,8 +1,14 @@
 import { NormalButton } from 'components/atoms/Button/Button';
-import ShopList from '../../components/Template/ShopList';
+
+import { NormalSelect } from 'components/atoms/Select/Select';
 
 const MainPage = () => {
-  return <NormalButton buttonType="text" />;
+  return (
+    <>
+      <NormalButton buttonType="text" />
+      <NormalSelect />
+    </>
+  );
 };
 
 export default MainPage;

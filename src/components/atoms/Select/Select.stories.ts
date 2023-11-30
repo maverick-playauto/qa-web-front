@@ -23,6 +23,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    selectType: 'primary',
     options: [
       { name: 'opt11', value: 1 },
       { name: 'opt22', value: 2 },

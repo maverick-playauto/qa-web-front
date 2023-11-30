@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <>
       <NormalButton buttonType="text" />
-      <NormalSelect />
+      <NormalSelect selectType="primary" />
     </>
   );
 };

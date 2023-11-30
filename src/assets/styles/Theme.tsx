@@ -2,6 +2,8 @@ import { DefaultTheme } from 'styled-components';
 
 //material ui colors 참고 : https://materialuicolors.co/?ref=pns
 const colorPalette = {
+  lightDefault: '#FFFFFF',
+  darkDefault: '#252525',
   red50: '#ffebee',
   red100: '#FFCDD2',
   red200: '#EF9A9A',
@@ -209,20 +211,38 @@ export const LightTheme: DefaultTheme = {
   defaultHeight: 34,
 
   color: {
-    background: '#FFFFFF',
-    border: '#DEDEDF',
-    text: '#333333',
-    reversalText: '#FFFFFF',
+    normal: {
+      background: colorPalette.lightDefault,
+      border: colorPalette.grey600,
+      text: colorPalette.grey600,
+    },
+    hover: {
+      background: colorPalette.grey50,
+      border: colorPalette.grey900,
+      text: colorPalette.grey900,
+    },
+    active: {
+      background: colorPalette.grey100,
+      border: colorPalette.grey900,
+      text: colorPalette.grey900,
+    },
+    disabled: {
+      background: colorPalette.grey100,
+      border: colorPalette.grey400,
+      text: colorPalette.grey500,
+    },
+    revalsal: {
+      text: colorPalette.lightDefault,
+    },
 
-    disabledBackground: '#F8F8F8',
-    disabledBorder: '#AAAAAA',
-    disabledText: '#AAAAAA',
-
-    placeholderText: '#CCCCCC',
-    checkboxBorder: '#D4D4D4',
-
-    selectBorder: colorPalette.grey500,
-    selectText: colorPalette.grey500,
+    brownLight: {
+      moreLight: colorPalette.brown50,
+      light: colorPalette.brown100,
+      lessLight: colorPalette.brown200,
+      lessDeep: colorPalette.brown300,
+      deep: colorPalette.brown400,
+      moreDeep: colorPalette.brown500,
+    },
 
     blueLight: {
       moreLight: colorPalette.blue50,

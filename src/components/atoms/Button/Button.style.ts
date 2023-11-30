@@ -11,6 +11,10 @@ export const Btn = styled.button<IButtonTag>`
     padding ? `${padding}px ${padding}px` : `3px 5px`};
   ${({ buttonType, theme, disabled }) =>
     cssOfBtnType(buttonType, theme, disabled)}
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const cssOfBtnType = (
@@ -18,20 +22,17 @@ const cssOfBtnType = (
   theme: DefaultTheme,
   disabled: boolean = false,
 ) => {
-  let commonCss = null;
   let individualCss = null;
-
-  commonCss = css``;
-
   switch (btnType) {
     case 'text':
       individualCss = css`
-        background-color: ${theme.color.background};
-        color: ${disabled ? theme.color.disabled : theme.color.blueLight.deep};
+        background-color: ${theme.color.normal.background};
+        color: ${disabled
+          ? theme.color.disabled.text
+          : theme.color.blueLight.deep};
         ${!disabled &&
         css`
           &:hover {
-            cursor: pointer;
             background-color: ${theme.color.blueLight.moreLight};
           }
 
@@ -45,15 +46,14 @@ const cssOfBtnType = (
     case 'contained':
       individualCss = css`
         background-color: ${disabled
-          ? theme.color.disabled
+          ? theme.color.disabled.background
           : theme.color.blueLight.deep};
         color: ${disabled
-          ? theme.color.disabledText
-          : theme.color.reversalText};
+          ? theme.color.disabled.text
+          : theme.color.revalsal.text};
         ${!disabled &&
         css`
           &:hover {
-            cursor: pointer;
             background-color: ${theme.color.blueLight.moreDeep};
           }
 
@@ -66,22 +66,24 @@ const cssOfBtnType = (
       break;
     case 'outlined':
       individualCss = css`
-        background-color: ${theme.color.background};
+        background-color: ${theme.color.normal.background};
         border: 1px solid
           ${disabled
-            ? theme.color.disabledBorder
+            ? theme.color.disabled.border
             : theme.color.blueLight.lessDeep};
         color: ${disabled
-          ? theme.color.disabledText
+          ? theme.color.disabled.text
           : theme.color.blueLight.lessDeep};
         ${!disabled &&
         css`
           &:hover {
-            cursor: pointer;
             background-color: ${theme.color.blueLight.moreLight};
+            border-color: ${theme.color.blueLight.deep};
+            color: ${theme.color.blueLight.deep};
           }
 
           &:active {
+            background-color: ${theme.color.blueLight.light};
             color: ${theme.color.blueLight.moreDeep};
             border-color: ${theme.color.blueLight.moreDeep};
           }
@@ -89,8 +91,5 @@ const cssOfBtnType = (
       `;
       break;
   }
-  return css`
-    ${commonCss}
-    ${individualCss}
-  `;
+  return individualCss;
 };

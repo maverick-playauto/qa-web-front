@@ -4,6 +4,11 @@ import { IAtoms } from '..';
 export interface ISelectProp
   extends Pick<IAtoms, 'children' | 'width' | 'disabled'> {
   /**
+   * 셀렉트 종류
+   */
+  selectType: 'primary';
+
+  /**
    * onChange Event
    */
   onChange?: MouseEventHandler<HTMLSelectElement>;
@@ -21,7 +26,7 @@ export interface ISelectProp
   /**
    * 옵션
    */
-  options?: { name: string; value: number | string }[];
+  options?: { name: string; value: number | string; [key: string]: any }[];
 
   /**
    * placeholder
@@ -38,15 +43,20 @@ export interface ISelectProp
    */
   value?: string | number | 'default';
 
+  /**
+   * Option Area Open여부
+   */
   isOpen?: boolean;
 }
 
-// 버튼 css 속성 값
-export interface ISelectTag
+// 셀렉트 css 속성 값
+export interface ISelectboxTag
   extends Pick<ISelectProp, 'padding' | 'margin' | 'width'> {}
 
-export interface ISelectBoxTag
-  extends Pick<
-    ISelectProp,
-    'children' | 'value' | 'width' | 'options' | 'margin' | 'padding'
-  > {}
+export interface ISelectTag
+  extends Pick<ISelectProp, 'selectType' | 'disabled'> {}
+
+export interface IOptionTag
+  extends Pick<ISelectProp, 'selectType' | 'width' | 'isOpen'> {}
+
+export interface IItemTag extends Pick<ISelectProp, 'selectType'> {}

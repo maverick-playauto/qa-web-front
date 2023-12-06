@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ISelectProp } from './Select.interface';
 import { TiArrowUnsorted } from 'react-icons/ti';
 import * as S from './Select.style';
@@ -11,16 +11,34 @@ export const NormalSelect = ({
   options = [{ name: 'sampleOption', value: '' }],
   subject = 'select',
 }: ISelectProp) => {
+  const selectRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => {
-    setIsOpen(prev => !prev);
+
+  const handleOutsideClick = (e: MouseEvent) => {
+    if (selectRef.current && !selectRef.current.contains(e.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // 외부에서의 클릭 이벤트를 감지하기 위한 이벤트 리스너 추가
+    document.addEventListener('click', handleOutsideClick);
+
+    // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  const toggleDropMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setIsOpen(prevState => !prevState);
   };
   return (
-    <S.SelectBox width={width} margin={margin}>
+    <S.SelectBox width={width} margin={margin} ref={selectRef}>
       <S.Select
         selectType={selectType}
         disabled={disabled}
-        onClick={() => setIsOpen(prev => !prev)}
+        onClick={toggleDropMenu}
       >
         <div>{subject}</div>
         <TiArrowUnsorted />

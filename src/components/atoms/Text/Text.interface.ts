@@ -1,27 +1,16 @@
 import { KeyboardEvent } from 'react';
 import { IAtoms } from '..';
 
-export interface ITextProp
-  extends Pick<IAtoms, 'children' | 'width' | 'disabled'> {
+export interface ITextProp extends Pick<IAtoms, 'width' | 'disabled'> {
   /**
-   * text id값
+   * text name (용도)
    */
-  id: string;
-
-  /**
-   * text value값
-   */
-  value?: any;
+  name: string;
 
   /**
    * text 종류
    */
   inputType: 'primary';
-
-  /**
-   * onChange Event
-   */
-  onChange?: KeyboardEvent<HTMLInputElement>;
 
   /**
    * 마진 커스텀
@@ -34,11 +23,6 @@ export interface ITextProp
   padding?: number;
 
   /**
-   * masking
-   */
-  masking?: 'number' | 'string' | '';
-
-  /**
    * placeholder
    */
   placeholder?: string;
@@ -46,4 +30,4 @@ export interface ITextProp
 
 // 셀렉트 css 속성 값
 export interface ITextTag
-  extends Pick<ITextProp, 'padding' | 'margin' | 'width'> {}
+  extends Pick<ITextProp, 'padding' | 'margin' | 'width' | 'inputType'> {}

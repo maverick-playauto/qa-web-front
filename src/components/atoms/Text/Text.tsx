@@ -1,13 +1,24 @@
+import { ChangeEvent, useState } from 'react';
 import { ITextProp } from './Text.interface';
 import * as S from './Text.style';
 
 export const NormalText = ({
-  id,
-  children = 'empty',
-  masking = '',
+  name,
   inputType = 'primary',
-  onChange,
   placeholder = '검색어 입력',
 }: ITextProp) => {
-  return <></>;
+  const [value, setValue] = useState('');
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
+  return (
+    <S.Input
+      name={name}
+      type="text"
+      value={value}
+      inputType={inputType}
+      onChange={handleChange}
+      placeholder={placeholder}
+    />
+  );
 };

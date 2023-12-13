@@ -1,25 +1,25 @@
-import { MouseEventHandler } from 'react';
+import { HTMLInputTypeAttribute, MouseEventHandler } from 'react';
 import { IAtoms } from '..';
 
 export interface IButtonProp
   extends Pick<IAtoms, 'children' | 'disabled' | 'width'> {
   /**
-   * 버튼 종류
+   * 버튼 유형
    */
-  buttonType: 'text' | 'contained' | 'outlined';
+  variant: 'primary' | 'contained' | 'outlined';
 
   /**
-   * onClick Event
+   * 클릭시 이벤트
    */
   onClick?: MouseEventHandler<HTMLButtonElement>;
 
   /**
-   * 마진 커스텀
+   * 마진
    */
   margin?: number;
 
   /**
-   * 패딩 커스텀
+   * 패딩
    */
   padding?: number;
 
@@ -32,11 +32,16 @@ export interface IButtonProp
    * 로딩 여부
    */
   loading?: boolean;
+
+  /**
+   * 버튼 타입
+   */
+  type?: HTMLButtonElement;
 }
 
 // 버튼 css 속성 값
 export interface IButtonTag
   extends Pick<
     IButtonProp,
-    'disabled' | 'width' | 'buttonType' | 'margin' | 'height' | 'padding'
+    'disabled' | 'width' | 'variant' | 'margin' | 'height' | 'padding' | 'type'
   > {}

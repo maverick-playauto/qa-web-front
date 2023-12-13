@@ -9,8 +9,12 @@ export const Btn = styled.button<IButtonTag>`
   margin: ${({ margin }) => (margin ? `${margin}px ${margin}px` : `$3px 5px`)};
   padding: ${({ padding }) =>
     padding ? `${padding}px ${padding}px` : `3px 5px`};
-  ${({ buttonType, theme, disabled }) =>
-    cssOfBtnType(buttonType, theme, disabled)}
+  width: ${({ theme, width }) =>
+    `${width ? theme.defaultWidth[width] : '106'}px`};
+  height: ${({ theme, height }) =>
+    `${height ? `${height}` : theme.defaultHeight}px`};
+  ${({ variant, theme, disabled }) => cssOfBtnType(variant, theme, disabled)}
+  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -18,13 +22,13 @@ export const Btn = styled.button<IButtonTag>`
 `;
 
 const cssOfBtnType = (
-  btnType: 'text' | 'contained' | 'outlined',
+  btnType: 'primary' | 'contained' | 'outlined',
   theme: DefaultTheme,
   disabled: boolean = false,
 ) => {
   let individualCss = null;
   switch (btnType) {
-    case 'text':
+    case 'primary':
       individualCss = css`
         background-color: ${theme.color.normal.background};
         color: ${disabled

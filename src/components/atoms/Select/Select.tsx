@@ -4,20 +4,29 @@ import { TiArrowUnsorted } from 'react-icons/ti';
 import * as S from './Select.style';
 
 export const NormalSelect = ({
-  selectType = 'primary',
+  variant = 'primary',
   width = 'small',
   disabled = false,
   margin,
-  options = [{ name: 'sampleOption', value: '' }],
+  options = [
+    { name: 'sampleOption', value: 'sample' },
+    { name: 'sampleOption2', value: 'sample' },
+  ],
   subject = 'select',
 }: ISelectProp) => {
   const selectRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [value, setValue] = useState({ option: subject, value: '' });
 
   const handleOutsideClick = (e: MouseEvent) => {
     if (selectRef.current && !selectRef.current.contains(e.target as Node)) {
       setIsOpen(false);
     }
+  };
+
+  const handleClick = (opt: { name: string; value: any }) => {
+    setValue({ option: opt.name, value: opt.value });
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -36,21 +45,27 @@ export const NormalSelect = ({
   return (
     <S.SelectBox width={width} margin={margin} ref={selectRef}>
       <S.Select
-        selectType={selectType}
+        variant={variant}
         disabled={disabled}
         onClick={toggleDropMenu}
+        value={value.value}
       >
-        <div>{subject}</div>
+        <div>{value.option}</div>
         <TiArrowUnsorted />
       </S.Select>
       {isOpen && (
-        <S.Option selectType={selectType}>
+        <S.OptionBox variant={variant}>
           {options.map(opt => (
-            <S.Item selectType={selectType} key={opt.value} value={opt.value}>
+            <S.Item
+              variant={variant}
+              key={opt.value}
+              value={opt.value}
+              onClick={() => handleClick(opt)}
+            >
               {opt.name}
             </S.Item>
           ))}
-        </S.Option>
+        </S.OptionBox>
       )}
     </S.SelectBox>
   );

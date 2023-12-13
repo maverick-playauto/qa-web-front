@@ -2,8 +2,8 @@ import { IButtonProp } from './Button.interface';
 import * as S from './Button.style';
 
 export const NormalButton = ({
-  buttonType = 'contained',
-  width = 'medium',
+  variant = 'contained',
+  width = 'xs',
   disabled = false,
   onClick,
   margin,
@@ -13,7 +13,7 @@ export const NormalButton = ({
 }: IButtonProp) => {
   return (
     <S.Btn
-      buttonType={buttonType}
+      variant={variant}
       width={width}
       disabled={disabled || false}
       onClick={onClick}

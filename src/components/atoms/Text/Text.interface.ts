@@ -10,7 +10,7 @@ export interface ITextProp extends Pick<IAtoms, 'width' | 'disabled'> {
   /**
    * text 종류
    */
-  inputType: 'primary';
+  variant: 'primary';
 
   /**
    * 마진 커스텀
@@ -30,4 +30,4 @@ export interface ITextProp extends Pick<IAtoms, 'width' | 'disabled'> {
 
 // 셀렉트 css 속성 값
 export interface ITextTag
-  extends Pick<ITextProp, 'padding' | 'margin' | 'width' | 'inputType'> {}
+  extends Pick<ITextProp, 'padding' | 'margin' | 'width' | 'variant'> {}

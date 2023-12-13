@@ -211,6 +211,8 @@ export const LightTheme: DefaultTheme = {
   defaultHeight: 34,
 
   color: {
+    black: colorPalette.darkDefault,
+
     normal: {
       background: colorPalette.lightDefault,
       border: colorPalette.grey600,

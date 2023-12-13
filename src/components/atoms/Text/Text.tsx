@@ -4,7 +4,7 @@ import * as S from './Text.style';
 
 export const NormalText = ({
   name,
-  inputType = 'primary',
+  variant = 'primary',
   placeholder = '검색어 입력',
 }: ITextProp) => {
   const [value, setValue] = useState('');
@@ -14,9 +14,8 @@ export const NormalText = ({
   return (
     <S.Input
       name={name}
-      type="text"
       value={value}
-      inputType={inputType}
+      variant={variant}
       onChange={handleChange}
       placeholder={placeholder}
     />

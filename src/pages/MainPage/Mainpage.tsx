@@ -6,9 +6,9 @@ import { NormalText } from 'components/atoms/Text/Text';
 const MainPage = () => {
   return (
     <>
-      <NormalButton buttonType="text" />
-      <NormalSelect selectType="primary" />
-      <NormalText inputType="primary" name="searchShop" />
+      <NormalButton variant="primary" />
+      <NormalSelect variant="primary" width="large" />
+      <NormalText variant="primary" name="searchShop" />
     </>
   );
 };

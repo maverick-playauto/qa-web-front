@@ -11,7 +11,7 @@ const meta = {
   argTypes: {
     options: {
       control: {
-        type: 'array',
+        variant: 'array',
       },
     },
     width: { control: 'select' },
@@ -23,7 +23,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    selectType: 'primary',
+    variant: 'primary',
     options: [
       { name: 'opt11', value: 1 },
       { name: 'opt22', value: 2 },

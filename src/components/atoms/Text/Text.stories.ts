@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { NormalText } from './Text';
-import { string } from 'prop-types';
 
 const meta = {
   title: 'Components/Atom/Text',
@@ -11,7 +10,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     name: { control: 'string' },
-    inputType: { options: ['primary'], control: { type: 'radio' } },
+    variant: { options: ['primary'], control: { type: 'radio' } },
     placeholder: { control: 'string' },
   },
 } satisfies Meta<typeof NormalText>;
@@ -22,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     name: 'search',
-    inputType: 'primary',
+    variant: 'primary',
     placeholder: 'place holder',
   },
 };

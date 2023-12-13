@@ -6,7 +6,7 @@ export interface ISelectProp
   /**
    * 셀렉트 종류
    */
-  selectType: 'primary';
+  variant: 'primary';
 
   /**
    * onChange Event
@@ -41,7 +41,7 @@ export interface ISelectProp
   /**
    * option value 값
    */
-  value?: string | number | 'default';
+  value?: string | number | '';
 
   /**
    * Option Area Open여부
@@ -54,9 +54,9 @@ export interface ISelectboxTag
   extends Pick<ISelectProp, 'padding' | 'margin' | 'width'> {}
 
 export interface ISelectTag
-  extends Pick<ISelectProp, 'selectType' | 'disabled'> {}
+  extends Pick<ISelectProp, 'variant' | 'disabled' | 'value'> {}
 
 export interface IOptionTag
-  extends Pick<ISelectProp, 'selectType' | 'width' | 'isOpen'> {}
+  extends Pick<ISelectProp, 'variant' | 'width' | 'isOpen'> {}
 
-export interface IItemTag extends Pick<ISelectProp, 'selectType'> {}
+export interface IItemTag extends Pick<ISelectProp, 'variant'> {}

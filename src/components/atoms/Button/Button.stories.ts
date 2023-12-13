@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    buttonType: { control: 'radio' },
+    variant: { control: 'radio' },
     width: { control: 'select' },
     children: { control: 'text' },
   },
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Text: Story = {
   args: {
-    buttonType: 'text',
+    variant: 'primary',
     width: 'medium',
     margin: 5,
     padding: 3,
@@ -29,7 +29,7 @@ export const Text: Story = {
 
 export const Contained: Story = {
   args: {
-    buttonType: 'contained',
+    variant: 'contained',
     width: 'medium',
     margin: 5,
     padding: 3,
@@ -38,7 +38,7 @@ export const Contained: Story = {
 
 export const Outlined: Story = {
   args: {
-    buttonType: 'outlined',
+    variant: 'outlined',
     width: 'medium',
     margin: 5,
     padding: 3,

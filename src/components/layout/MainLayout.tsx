@@ -7,10 +7,9 @@ import {
   HomeOutlined,
 } from '@ant-design/icons';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import MainPage from 'pages/Mainpage';
-import Sites from 'pages/WorkProgress';
-import Home from 'pages/Home';
-import WorkProgress from 'pages/WorkProgress';
+import MainPage from 'pages/mainPage/Mainpage';
+import Home from 'pages/home/Home';
+import WorkProgress from 'pages/workProgress/WorkProgress';
 
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);

@@ -196,69 +196,33 @@ const colorPalette = {
   blueGrey900: '#263238',
 };
 
-export const LightTheme: DefaultTheme = {
-  defaultWidth: {
-    xxs: 34,
-    xs: 94,
-    small: 106,
-    medium: 148,
-    large: 184,
-    xl: 276,
-    xxl: 432,
-    full: '100%',
-  },
-
-  defaultHeight: 34,
-
-  color: {
-    black: colorPalette.darkDefault,
-
-    normal: {
-      background: colorPalette.lightDefault,
-      border: colorPalette.grey600,
-      text: colorPalette.grey600,
-    },
-    hover: {
-      background: colorPalette.grey50,
-      border: colorPalette.grey900,
-      text: colorPalette.grey900,
-    },
-    active: {
-      background: colorPalette.grey100,
-      border: colorPalette.grey900,
-      text: colorPalette.grey900,
-    },
-    disabled: {
-      background: colorPalette.grey100,
-      border: colorPalette.grey400,
-      text: colorPalette.grey500,
-    },
-    revalsal: {
-      text: colorPalette.lightDefault,
-    },
-
-    brownLight: {
-      moreLight: colorPalette.brown50,
-      light: colorPalette.brown100,
-      lessLight: colorPalette.brown200,
-      lessDeep: colorPalette.brown300,
-      deep: colorPalette.brown400,
-      moreDeep: colorPalette.brown500,
-    },
-
-    blueLight: {
-      moreLight: colorPalette.blue50,
-      light: colorPalette.blue100,
-      lessLight: colorPalette.blue200,
-      lessDeep: colorPalette.blue300,
-      deep: colorPalette.blue400,
-      moreDeep: colorPalette.blue500,
-    },
-
-    error: colorPalette.red500,
-    warning: colorPalette.amber300,
-  },
+//반응형 분기 - 아직은 사용할지 안할지 모름
+const deviceSizes = {
+  mobile: '375px',
+  tablet: '768px',
+  laptop: '1024px',
 };
+
+const device = {
+  mobile: `screen and (max-width: ${deviceSizes.mobile})`,
+  tablet: `screen and (max-width: ${deviceSizes.tablet})`,
+  laptop: `screen and (max-width: ${deviceSizes.laptop})`,
+};
+
+export const theme = {
+  device,
+};
+
+export const fontSize = {
+  xs: '0.3rem',
+  small: '0.5rem',
+  normal: '1rem',
+  large: '1.5rem',
+  xl: '2rem',
+  xxl: '4rem',
+};
+
+export const LightTheme: DefaultTheme = {};
 
 export const DarkTheme: DefaultTheme = {
   defaultWidth: {

@@ -3,8 +3,6 @@ import Router from './Router';
 import GlobalStyle from './assets/styles/GlobalStyle';
 import { LightTheme } from './assets/styles/Theme';
 import { ThemeProvider } from 'styled-components';
-import { Provider } from 'react-redux';
-import store from 'store/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -12,8 +10,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <ThemeProvider theme={LightTheme}>
     <GlobalStyle />
-    <Provider store={store}>
-      <Router />
-    </Provider>
+    <Router />
   </ThemeProvider>,
 );

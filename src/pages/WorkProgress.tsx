@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Sites = () => {
+const WorkProgress = () => {
   return <div>Sites</div>;
 };
 
-export default Sites;
+export default WorkProgress;

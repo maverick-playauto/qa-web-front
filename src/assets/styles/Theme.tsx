@@ -222,7 +222,18 @@ export const fontSize = {
   xxl: '4rem',
 };
 
-export const LightTheme: DefaultTheme = {};
+export const LightTheme: DefaultTheme = {
+  width: {
+    xxs: '34px',
+    xs: '94px',
+    small: '106px',
+    medium: '148px',
+    large: '184px',
+    xl: '276px',
+    xxl: '432px',
+    full: '100%',
+  },
+};
 
 export const DarkTheme: DefaultTheme = {
   defaultWidth: {

@@ -3,116 +3,10 @@ import { SearchOutlined } from '@ant-design/icons';
 import type { TableColumnsType, TableColumnType } from 'antd';
 import { Button, Input, Space, Table } from 'antd';
 import Highlighter from 'react-highlight-words';
-import QA from './QA';
+import ShopAction from './ShopAction';
 import { useShopListCountFilter } from 'store/store';
-
-type FilterDropdownType = Exclude<
-  TableColumnType<DataType>['filterDropdown'],
-  React.ReactNode
->;
-type FilterConfirmProps = Parameters<FilterDropdownType>[0]['confirm'];
-
-interface DataType {
-  key: React.Key;
-  shopName: string;
-  shopCode: string;
-  isApi: string;
-  isAppliedEngine: string;
-  qa: string;
-}
-
-type DataIndex = keyof DataType;
-
-const data: DataType[] = [
-  {
-    key: 1,
-    shopName: '옥션',
-    shopCode: 'A001',
-    isApi: 'X',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 2,
-    shopName: 'CJMall',
-    shopCode: 'A004',
-    isApi: 'X',
-    isAppliedEngine: 'O',
-    qa: '',
-  },
-  {
-    key: 3,
-    shopName: 'GMarket',
-    shopCode: 'A006',
-    isApi: 'X',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 4,
-    shopName: '스마트스토어',
-    shopCode: 'A077',
-    isApi: 'O',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 5,
-    shopName: '11번가',
-    shopCode: 'A112',
-    isApi: 'O',
-    isAppliedEngine: 'O',
-    qa: '',
-  },
-  {
-    key: 6,
-    shopName: '11번가(신규)',
-    shopCode: 'A113',
-    isApi: 'O',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 7,
-    shopName: '현대H몰',
-    shopCode: 'A131',
-    isApi: 'O',
-    isAppliedEngine: 'O',
-    qa: '',
-  },
-  {
-    key: 8,
-    shopName: '위메프2.0',
-    shopCode: 'B719',
-    isApi: 'O',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 9,
-    shopName: '카카오톡스토어',
-    shopCode: 'B688',
-    isApi: 'O',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 10,
-    shopName: '티몬',
-    shopCode: 'B956',
-    isApi: 'O',
-    isAppliedEngine: 'X',
-    qa: '',
-  },
-  {
-    key: 11,
-    shopName: '오늘의집',
-    shopCode: 'B959',
-    isApi: 'O',
-    isAppliedEngine: 'O',
-    qa: '',
-  },
-];
+import type { DataType, FilterConfirmProps, DataIndex } from './types/types';
+import { shopListData } from 'utils/mock/MockData';
 
 const ShopList: React.FC = () => {
   const { count } = useShopListCountFilter();
@@ -271,10 +165,10 @@ const ShopList: React.FC = () => {
   return (
     <Table
       columns={columns}
-      dataSource={data}
+      dataSource={shopListData}
       pagination={{ pageSize: count }}
       expandable={{
-        expandedRowRender: record => <QA shopCode={record.shopCode} />,
+        expandedRowRender: record => <ShopAction shopCode={record.shopCode} />,
       }}
     />
   );

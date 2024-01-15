@@ -1,4 +1,4 @@
-import MainLayout from 'components/layout/MainLayout';
+import MainLayout from 'layout/mainLayout/MainLayout';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {

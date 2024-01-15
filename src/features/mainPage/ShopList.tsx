@@ -4,12 +4,9 @@ import type { TableColumnsType, TableColumnType } from 'antd';
 import { Button, Input, Space, Table } from 'antd';
 import Highlighter from 'react-highlight-words';
 import ShopAction from './ShopAction';
-import { useShopListCountFilter } from 'store/store';
 import type { DataType, FilterConfirmProps, DataIndex } from './types/types';
-import { shopListData } from 'utils/mock/MockData';
 
-const ShopList: React.FC = () => {
-  const { count } = useShopListCountFilter();
+const ShopList: React.FC<{ dataSource: DataType[] }> = ({ dataSource }) => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
@@ -165,8 +162,8 @@ const ShopList: React.FC = () => {
   return (
     <Table
       columns={columns}
-      dataSource={shopListData}
-      pagination={{ pageSize: count }}
+      dataSource={dataSource}
+      pagination={false}
       expandable={{
         expandedRowRender: record => <ShopAction shopCode={record.shopCode} />,
       }}

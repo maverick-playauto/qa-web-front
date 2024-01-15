@@ -10,7 +10,7 @@ import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import MainPage from 'pages/mainPage/MainPage';
 import Home from 'pages/home/Home';
 import WorkProgress from 'pages/workProgress/WorkProgress';
-import styled from 'styled-components';
+import * as S from './styles/MainLayoutStyle';
 
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -38,7 +38,7 @@ const MainLayout = () => {
           onClick={handleMovePage}
         />
       </Sider>
-      <PageContainer>
+      <S.PageContainer>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -46,7 +46,7 @@ const MainLayout = () => {
             <Route path="/work-progress" element={<WorkProgress />} />
           </Routes>
         </Layout>
-      </PageContainer>
+      </S.PageContainer>
     </Layout>
   );
 };
@@ -67,10 +67,3 @@ const items = [
   getItem('QASystem', '/qa', <ExperimentOutlined />),
   getItem('작업 진행 사항', '/work-progress', <FileDoneOutlined />),
 ];
-
-const PageContainer = styled.div`
-  margin: 0 auto;
-  padding: 40px;
-  width: 90%;
-  min-width: 1024px;
-`;

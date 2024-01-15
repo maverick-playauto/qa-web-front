@@ -1,0 +1,1242 @@
+[
+  {
+    "key": 1,
+    "shopCode": "A001",
+    "shopName": "옥션",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 2,
+    "shopCode": "A004",
+    "shopName": "CJMALL(CJ오쇼핑,CJ온스타일)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 3,
+    "shopCode": "A006",
+    "shopName": "G마켓",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 4,
+    "shopCode": "A008",
+    "shopName": "인터파크",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 5,
+    "shopCode": "A010",
+    "shopName": "우마켓",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 6,
+    "shopCode": "A011",
+    "shopName": "GS이숍",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 7,
+    "shopCode": "A012",
+    "shopName": "LOTTE닷컴(롯데닷컴)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 8,
+    "shopCode": "A014",
+    "shopName": "CJMALL-한샘",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 9,
+    "shopCode": "A017",
+    "shopName": "Ak몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 10,
+    "shopCode": "A024",
+    "shopName": "WIZWID(위즈위드)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 11,
+    "shopCode": "A027",
+    "shopName": "인터파크-오픈마켓",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 12,
+    "shopCode": "A032",
+    "shopName": "SSG(통합)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 13,
+    "shopCode": "A033",
+    "shopName": "지그재그",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 14,
+    "shopCode": "A064",
+    "shopName": "SK스토아",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 15,
+    "shopCode": "A065",
+    "shopName": "아이스타일",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 16,
+    "shopCode": "A076",
+    "shopName": "SSG(오픈마켓)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 17,
+    "shopCode": "A077",
+    "shopName": "스마트스토어",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 18,
+    "shopCode": "A083",
+    "shopName": "신세계몰(SSG)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 19,
+    "shopCode": "A084",
+    "shopName": "이마트몰(SSG)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 20,
+    "shopCode": "A085",
+    "shopName": "신세계백화점(SSG)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 21,
+    "shopCode": "A088",
+    "shopName": "쇼핑멸치",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 22,
+    "shopCode": "A089",
+    "shopName": "쇼핑멸치(공급가)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 23,
+    "shopCode": "A100",
+    "shopName": "롯데아이몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 24,
+    "shopCode": "A109",
+    "shopName": "하프클럽(신)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 25,
+    "shopCode": "A112",
+    "shopName": "11번가",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 26,
+    "shopCode": "A113",
+    "shopName": "11번가(신규)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 27,
+    "shopCode": "A114",
+    "shopName": "까사미아",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 28,
+    "shopCode": "A118",
+    "shopName": "농수산쇼핑몰(신)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 29,
+    "shopCode": "A123",
+    "shopName": "인터파크-오픈마켓(신)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 30,
+    "shopCode": "A124",
+    "shopName": "한샘몰",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 31,
+    "shopCode": "A125",
+    "shopName": "올웨이즈",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 32,
+    "shopCode": "A126",
+    "shopName": "미니샵",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 33,
+    "shopCode": "A129",
+    "shopName": "위메프2.0(딜)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 34,
+    "shopCode": "A131",
+    "shopName": "현대H몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 35,
+    "shopCode": "A132",
+    "shopName": "현대H몰(백화점)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 36,
+    "shopCode": "A133",
+    "shopName": "더현대",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 37,
+    "shopCode": "A134",
+    "shopName": "현대리바트몰",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 38,
+    "shopCode": "A135",
+    "shopName": "홈플러스(new)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 39,
+    "shopCode": "A136",
+    "shopName": "플레이페이",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 40,
+    "shopCode": "A137",
+    "shopName": "컴퓨존",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 41,
+    "shopCode": "A140",
+    "shopName": "홈쇼핑모아",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 42,
+    "shopCode": "A150",
+    "shopName": "전자랜드",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 43,
+    "shopCode": "A160",
+    "shopName": "셀링콕",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 44,
+    "shopCode": "A170",
+    "shopName": "배민상회",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 45,
+    "shopCode": "A171",
+    "shopName": "컬리",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 46,
+    "shopCode": "A172",
+    "shopName": "도매아토즈",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 47,
+    "shopCode": "A173",
+    "shopName": "29cm",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 48,
+    "shopCode": "A174",
+    "shopName": "큐텐닷컴",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 49,
+    "shopCode": "A175",
+    "shopName": "티몬월드",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 50,
+    "shopCode": "A176",
+    "shopName": "캐시딜",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 51,
+    "shopCode": "A321",
+    "shopName": "페이스북샵스",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 52,
+    "shopCode": "A400",
+    "shopName": "에이블리(Ably)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 53,
+    "shopCode": "A522",
+    "shopName": "옥션2.0",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 54,
+    "shopCode": "A523",
+    "shopName": "G마켓2.0",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 55,
+    "shopCode": "A524",
+    "shopName": "롯데ON",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 56,
+    "shopCode": "A525",
+    "shopName": "LF몰",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 57,
+    "shopCode": "A526",
+    "shopName": "셀러허브",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 58,
+    "shopCode": "A527",
+    "shopName": "도매의신",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 59,
+    "shopCode": "A528",
+    "shopName": "패션플러스(API)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 60,
+    "shopCode": "A529",
+    "shopName": "글로벌",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 61,
+    "shopCode": "A530",
+    "shopName": "제이슨(구할인중독-공구마켓-심쿵할인)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 62,
+    "shopCode": "A532",
+    "shopName": "롯데묘미",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 63,
+    "shopCode": "A533",
+    "shopName": "몽땅뚝딱",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 64,
+    "shopCode": "A534",
+    "shopName": "디애니몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 65,
+    "shopCode": "A536",
+    "shopName": "샵바이(파트너)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 66,
+    "shopCode": "A537",
+    "shopName": "샵바이(본사)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 67,
+    "shopCode": "A538",
+    "shopName": "토스공동구매",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 68,
+    "shopCode": "A555",
+    "shopName": "롯데백화점(신)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 69,
+    "shopCode": "A600",
+    "shopName": "알렛츠",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 70,
+    "shopCode": "B004",
+    "shopName": "카사",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 71,
+    "shopCode": "B005",
+    "shopName": "아임웹",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 72,
+    "shopCode": "B007",
+    "shopName": "패션플러스",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 73,
+    "shopCode": "B008",
+    "shopName": "하프클럽",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 74,
+    "shopCode": "B009",
+    "shopName": "롯데백화점",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 75,
+    "shopCode": "B011",
+    "shopName": "보리보리",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 76,
+    "shopCode": "B041",
+    "shopName": "텐바이텐",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 77,
+    "shopCode": "B046",
+    "shopName": "YES24",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 78,
+    "shopCode": "B048",
+    "shopName": "1300K",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 79,
+    "shopCode": "B051",
+    "shopName": "바보사랑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 80,
+    "shopCode": "B083",
+    "shopName": "카페24",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 81,
+    "shopCode": "B087",
+    "shopName": "sbs골프닷컴",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 82,
+    "shopCode": "B108",
+    "shopName": "우체국쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 83,
+    "shopCode": "B110",
+    "shopName": "롯데닷컴-Partner",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 84,
+    "shopCode": "B118",
+    "shopName": "메이크샵",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 85,
+    "shopCode": "B325",
+    "shopName": "이지웰몰(신)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 86,
+    "shopCode": "B378",
+    "shopName": "쿠팡(신)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 87,
+    "shopCode": "B394",
+    "shopName": "갤러리아",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 88,
+    "shopCode": "B430",
+    "shopName": "위메프(신)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 89,
+    "shopCode": "B506",
+    "shopName": "2001아울렛",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 90,
+    "shopCode": "B509",
+    "shopName": "웰스토리몰(신)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 91,
+    "shopCode": "B513",
+    "shopName": "베네피아",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 92,
+    "shopCode": "B569",
+    "shopName": "skinrx",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 93,
+    "shopCode": "B572",
+    "shopName": "골핑(B2C)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 94,
+    "shopCode": "B579",
+    "shopName": "72Time(구_NH마켓)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 95,
+    "shopCode": "B591",
+    "shopName": "인터파크-비즈마켓",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 96,
+    "shopCode": "B594",
+    "shopName": "W쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 97,
+    "shopCode": "B599",
+    "shopName": "인터파크-도서",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 98,
+    "shopCode": "B608",
+    "shopName": "AK몰(백화점)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 99,
+    "shopCode": "B609",
+    "shopName": "다이소몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 100,
+    "shopCode": "B612",
+    "shopName": "롯데마트",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 101,
+    "shopCode": "B614",
+    "shopName": "홈앤쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 102,
+    "shopCode": "B615",
+    "shopName": "엔조이뉴욕",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 103,
+    "shopCode": "B616",
+    "shopName": "카페24(신)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 104,
+    "shopCode": "B617",
+    "shopName": "오가게(신)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 105,
+    "shopCode": "B620",
+    "shopName": "세이골프",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 106,
+    "shopCode": "B661",
+    "shopName": "이랜드몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 107,
+    "shopCode": "B666",
+    "shopName": "무신사",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 108,
+    "shopCode": "B667",
+    "shopName": "롯데백화점파트너포탈",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 109,
+    "shopCode": "B668",
+    "shopName": "도매창고",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 110,
+    "shopCode": "B669",
+    "shopName": "머스트잇",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 111,
+    "shopCode": "B679",
+    "shopName": "인터파크-도서(MD)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 112,
+    "shopCode": "B682",
+    "shopName": "브리치",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 113,
+    "shopCode": "B683",
+    "shopName": "식스샵",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 114,
+    "shopCode": "B684",
+    "shopName": "동원몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 115,
+    "shopCode": "B685",
+    "shopName": "공영홈쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 116,
+    "shopCode": "B687",
+    "shopName": "우먼스톡",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 117,
+    "shopCode": "B688",
+    "shopName": "카카오톡스토어",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 118,
+    "shopCode": "B690",
+    "shopName": "K쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 119,
+    "shopCode": "B691",
+    "shopName": "고도몰5",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 120,
+    "shopCode": "B692",
+    "shopName": "MEMEBOX",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 121,
+    "shopCode": "B693",
+    "shopName": "도매꾹",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 122,
+    "shopCode": "B694",
+    "shopName": "핫트랙스(교보문고)",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 123,
+    "shopCode": "B696",
+    "shopName": "하이마트",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 124,
+    "shopCode": "B700",
+    "shopName": "카카오선물하기",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 125,
+    "shopCode": "B701",
+    "shopName": "삼성카드쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 126,
+    "shopCode": "B702",
+    "shopName": "메이크글로비",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 127,
+    "shopCode": "B703",
+    "shopName": "문고리닷컴",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 128,
+    "shopCode": "B707",
+    "shopName": "네이버페이",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 129,
+    "shopCode": "B710",
+    "shopName": "KimsON",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 130,
+    "shopCode": "B719",
+    "shopName": "위메프2.0",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 131,
+    "shopCode": "B720",
+    "shopName": "스포츠매니아",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 132,
+    "shopCode": "B722",
+    "shopName": "바이이즈",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 133,
+    "shopCode": "B726",
+    "shopName": "스룩페이",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 134,
+    "shopCode": "B727",
+    "shopName": "블로그페이",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 135,
+    "shopCode": "B730",
+    "shopName": "오너클랜",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 136,
+    "shopCode": "B733",
+    "shopName": "PLAYER",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 137,
+    "shopCode": "B771",
+    "shopName": "제로투세븐",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 138,
+    "shopCode": "B837",
+    "shopName": "스타일인덱스",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 139,
+    "shopCode": "B845",
+    "shopName": "가방팝",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 140,
+    "shopCode": "B877",
+    "shopName": "쇼핑앤티",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 141,
+    "shopCode": "B878",
+    "shopName": "신세계TV쇼핑",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 142,
+    "shopCode": "B880",
+    "shopName": "펀앤쇼핑",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 143,
+    "shopCode": "B888",
+    "shopName": "후추통",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 144,
+    "shopCode": "B917",
+    "shopName": "고도몰",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 145,
+    "shopCode": "B924",
+    "shopName": "펀샵",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 146,
+    "shopCode": "B953",
+    "shopName": "아트박스(구.POOM)",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 147,
+    "shopCode": "B955",
+    "shopName": "마이소호",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 148,
+    "shopCode": "B956",
+    "shopName": "티몬",
+    "isApi": "X",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 149,
+    "shopCode": "B957",
+    "shopName": "Wconcept",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 150,
+    "shopCode": "B959",
+    "shopName": "오늘의집",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 151,
+    "shopCode": "C003",
+    "shopName": "Qoo10(sg)-싱가포르",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 152,
+    "shopCode": "C010",
+    "shopName": "Qoo10(jp)-큐텐재팬",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 153,
+    "shopCode": "E001",
+    "shopName": "이카운트",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 154,
+    "shopCode": "L001",
+    "shopName": "리더스클럽",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  },
+  {
+    "key": 155,
+    "shopCode": "L002",
+    "shopName": "플라시스템",
+    "isApi": "O",
+    "isAppliedEngine": "X",
+    "qa": ""
+  }
+]

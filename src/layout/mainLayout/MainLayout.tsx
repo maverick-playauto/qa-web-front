@@ -7,7 +7,7 @@ import {
   HomeOutlined,
 } from '@ant-design/icons';
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
-import MainPage from 'pages/mainPage/MainPage';
+import MainPage from 'pages/mainPage/MainpPge';
 import Home from 'pages/home/Home';
 import WorkProgress from 'pages/workProgress/WorkProgress';
 import * as S from './styles/MainLayoutStyle';

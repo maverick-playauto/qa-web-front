@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { Dispatch, SetStateAction, useRef, useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import type { TableColumnsType, TableColumnType } from 'antd';
 import { Button, Input, Space, Table } from 'antd';
@@ -6,7 +6,9 @@ import Highlighter from 'react-highlight-words';
 import ShopAction from './ShopAction';
 import type { DataType, FilterConfirmProps, DataIndex } from './types/types';
 
-const ShopList: React.FC<{ dataSource: DataType[] }> = ({ dataSource }) => {
+const ShopList: React.FC<{
+  dataSource: DataType[];
+}> = ({ dataSource }) => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
@@ -150,17 +152,12 @@ const ShopList: React.FC<{ dataSource: DataType[] }> = ({ dataSource }) => {
       key: 'isAppliedEngine',
       width: '21%',
     },
-    Table.EXPAND_COLUMN,
-    {
-      title: 'QA',
-      dataIndex: 'qa',
-      key: 'qa',
-      width: '5%',
-    },
+    Table.SELECTION_COLUMN,
   ];
 
   return (
     <Table
+      style={{ caretColor: 'transparent' }}
       columns={columns}
       dataSource={dataSource}
       pagination={false}

@@ -22,6 +22,7 @@ const Container = () => {
     queryKey: ['/getShopList'],
     queryFn: () => sendUrl(url, method),
     refetchOnMount: false,
+    refetchOnWindowFocus: false,
   });
 
   useEffect(() => {

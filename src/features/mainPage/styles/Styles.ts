@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const ContentsArea = styled.section`
   max-height: 65vh;
@@ -18,4 +18,14 @@ export const FilterArea = styled.div`
 export const PaginationArea = styled.section`
   float: right;
   margin-right: 20px;
+`;
+
+export const ShopActionArea = styled.div`
+  padding: 0px 20px;
+`;
+
+export const Label = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
 `;

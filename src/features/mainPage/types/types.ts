@@ -1,4 +1,5 @@
 import { TableColumnType } from 'antd';
+import { Dispatch, SetStateAction } from 'react';
 
 export interface CountFilterType {
   options: { label: string; value: number }[];
@@ -11,7 +12,7 @@ type FilterDropdownType = Exclude<
 export type FilterConfirmProps = Parameters<FilterDropdownType>[0]['confirm'];
 
 export interface DataType {
-  key: React.Key;
+  key: number;
   shopName: string;
   shopCode: string;
   isApi: string;
@@ -20,3 +21,10 @@ export interface DataType {
 }
 
 export type DataIndex = keyof DataType;
+
+export interface MainPaginationType {
+  setPaginationConfig: Dispatch<
+    SetStateAction<{ currentPage: number; pageSize: number }>
+  >;
+  total: number;
+}

@@ -1,15 +1,14 @@
-import React, { useRef, useState } from 'react';
+import React, { Dispatch, SetStateAction, useRef, useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import type { TableColumnsType, TableColumnType } from 'antd';
 import { Button, Input, Space, Table } from 'antd';
 import Highlighter from 'react-highlight-words';
 import ShopAction from './ShopAction';
-import { useShopListCountFilter } from 'store/store';
 import type { DataType, FilterConfirmProps, DataIndex } from './types/types';
-import { shopListData } from 'utils/mock/MockData';
 
-const ShopList: React.FC = () => {
-  const { count } = useShopListCountFilter();
+const ShopList: React.FC<{
+  dataSource: DataType[];
+}> = ({ dataSource }) => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
@@ -153,20 +152,15 @@ const ShopList: React.FC = () => {
       key: 'isAppliedEngine',
       width: '21%',
     },
-    Table.EXPAND_COLUMN,
-    {
-      title: 'QA',
-      dataIndex: 'qa',
-      key: 'qa',
-      width: '5%',
-    },
+    Table.SELECTION_COLUMN,
   ];
 
   return (
     <Table
+      style={{ caretColor: 'transparent' }}
       columns={columns}
-      dataSource={shopListData}
-      pagination={{ pageSize: count }}
+      dataSource={dataSource}
+      pagination={false}
       expandable={{
         expandedRowRender: record => <ShopAction shopCode={record.shopCode} />,
       }}

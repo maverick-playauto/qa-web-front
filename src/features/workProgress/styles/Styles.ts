@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const BodyWrapper = styled.div`
   transition: all 0.6s ease-out;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const TitleWrapper = styled.div`

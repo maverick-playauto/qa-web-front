@@ -5,6 +5,7 @@ import {
   BodyWrapper,
   TitleWrapper,
 } from './styles/Styles';
+import AccordionBody from './AccordionBody';
 
 interface AccordionItemProps {
   title: string;
@@ -29,9 +30,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         style={{ cursor: 'pointer' }}
         onClick={() => onToggle(index)}
       >
-        <strong>- {title}</strong>
+        <strong>- {title} -</strong>
       </TitleWrapper>
-      {isOpen && <BodyWrapper>{content}</BodyWrapper>}
+      {isOpen && <AccordionBody />}
     </AccordionItemWrapper>
   );
 };
